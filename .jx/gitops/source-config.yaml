@@ -13,6 +13,7 @@ spec:
     - name: jx-go
     - name: jx-go-http
     - name: jx-golang-http
+    - name: jx3-node
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
