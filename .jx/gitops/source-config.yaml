@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: jenkinsx-node
     - name: jx-angular
+    - name: jx-golang-http
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
