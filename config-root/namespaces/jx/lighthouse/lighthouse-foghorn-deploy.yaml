@@ -21,7 +21,7 @@ spec:
       labels:
         app: lighthouse-foghorn
       annotations:
-        jenkins-x.io/hash: 'c6b637cd44004ccc46a0d4374555ffa42708cff130253a5d7173b35f360416bb'
+        jenkins-x.io/hash: 'b3de6813be63cbc5ac818dcb9b5bddb39af73465691d11bafacb7f553f1e594f'
     spec:
       serviceAccountName: lighthouse-foghorn
       containers:
