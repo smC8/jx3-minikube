@@ -11,6 +11,7 @@ spec:
     - name: jenkinsx-node
     - name: jx-angular
     - name: jx-go
+    - name: jx-go-http
     - name: jx-golang-http
     scheduler: in-repo
   slack:
