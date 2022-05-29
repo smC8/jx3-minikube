@@ -6,6 +6,14 @@ data:
       repos:
       - smC8/jx3-minikube
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - smC8/jenkinsx-node
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - smC8/jx-angular
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +24,16 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      smC8/jenkinsx-node:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      smC8/jx-angular:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       smC8/jx3-minikube:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +44,38 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      smC8/jenkinsx-node:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      smC8/jx-angular:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       smC8/jx3-minikube:
       - config-updater
       - approve
@@ -55,6 +105,14 @@ data:
     - repos:
       - smC8/jx3-minikube
       trusted_org: todo
+    - repos:
+      - smC8/jenkinsx-node
+      trusted_org: todo
+    - repos:
+      - smC8/jx-angular
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

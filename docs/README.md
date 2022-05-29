@@ -44,6 +44,13 @@
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
     <tr>
+	      <td>lighthouse-webui-plugin</td>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin' title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin </a></td>
+	      <td>0.1.7</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
+	    </tr>
+    <tr>
 	      <td>bucketrepo</td>
 	      <td><a href='' title='A Helm chart for bucketrepo service'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> bucketrepo </a></td>
 	      <td>0.1.67</td>

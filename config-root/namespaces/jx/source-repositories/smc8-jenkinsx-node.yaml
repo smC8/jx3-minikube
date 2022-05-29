@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: smC8
+    provider: github
+    repository: jenkinsx-node
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: smc8-jenkinsx-node
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/smC8/jenkinsx-node.git
+  org: smC8
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsx-node
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/smC8/jenkinsx-node

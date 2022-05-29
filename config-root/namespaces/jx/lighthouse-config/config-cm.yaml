@@ -7,6 +7,8 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        smC8/jenkinsx-node: true
+        smC8/jx-angular: true
         smC8/jx3-minikube: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +21,8 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        smC8/jenkinsx-node: merge
+        smC8/jx-angular: merge
         smC8/jx3-minikube: merge
       queries:
       - labels:
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - smC8/jx3-minikube
+        - smC8/jenkinsx-node
+        - smC8/jx-angular
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - smC8/jx3-minikube
+        - smC8/jenkinsx-node
+        - smC8/jx-angular
       target_url: http://lighthouse-jx.172.17.0.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
