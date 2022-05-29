@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: smC8
+    provider: github
+    repository: jx-go
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: smc8-jx-go
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/smC8/jx-go.git
+  org: smC8
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-go
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/smC8/jx-go
