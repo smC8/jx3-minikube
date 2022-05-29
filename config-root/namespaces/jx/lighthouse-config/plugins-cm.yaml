@@ -14,6 +14,10 @@ data:
       repos:
       - smC8/jx-angular
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - smC8/jx-golang-http
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -30,6 +34,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       smC8/jx-angular:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      smC8/jx-golang-http:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -61,6 +70,22 @@ data:
       - dog
       - pony
       smC8/jx-angular:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      smC8/jx-golang-http:
       - approve
       - assign
       - blunderbuss
@@ -110,6 +135,9 @@ data:
       trusted_org: todo
     - repos:
       - smC8/jx-angular
+      trusted_org: todo
+    - repos:
+      - smC8/jx-golang-http
       trusted_org: todo
     welcome:
     - message_template: Welcome

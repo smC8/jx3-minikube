@@ -9,6 +9,7 @@ data:
       enabled:
         smC8/jenkinsx-node: true
         smC8/jx-angular: true
+        smC8/jx-golang-http: true
         smC8/jx3-minikube: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         smC8/jenkinsx-node: merge
         smC8/jx-angular: merge
+        smC8/jx-golang-http: merge
         smC8/jx3-minikube: merge
       queries:
       - labels:
@@ -37,6 +39,7 @@ data:
         - smC8/jx3-minikube
         - smC8/jenkinsx-node
         - smC8/jx-angular
+        - smC8/jx-golang-http
       - labels:
         - updatebot
         missingLabels:
@@ -49,6 +52,7 @@ data:
         - smC8/jx3-minikube
         - smC8/jenkinsx-node
         - smC8/jx-angular
+        - smC8/jx-golang-http
       target_url: http://lighthouse-jx.172.17.0.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
