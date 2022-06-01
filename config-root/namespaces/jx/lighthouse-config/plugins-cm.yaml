@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - smC8/angular-test-jx
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - smC8/jenkinsx-node
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -26,6 +30,10 @@ data:
       repos:
       - smC8/jx-golang-http
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - smC8/jx3-node
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -36,6 +44,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      smC8/angular-test-jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       smC8/jenkinsx-node:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -66,11 +79,32 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      smC8/jx3-node:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
     owners: {}
     plugins:
+      smC8/angular-test-jx:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       smC8/jenkinsx-node:
       - approve
       - assign
@@ -168,6 +202,22 @@ data:
       - cat
       - dog
       - pony
+      smC8/jx3-node:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -179,6 +229,9 @@ data:
     triggers:
     - repos:
       - smC8/jx3-minikube
+      trusted_org: todo
+    - repos:
+      - smC8/angular-test-jx
       trusted_org: todo
     - repos:
       - smC8/jenkinsx-node
@@ -194,6 +247,9 @@ data:
       trusted_org: todo
     - repos:
       - smC8/jx-golang-http
+      trusted_org: todo
+    - repos:
+      - smC8/jx3-node
       trusted_org: todo
     welcome:
     - message_template: Welcome

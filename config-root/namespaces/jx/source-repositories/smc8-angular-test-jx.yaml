@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: smC8
+    provider: github
+    repository: angular-test-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: smc8-angular-test-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/smC8/angular-test-jx.git
+  org: smC8
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: angular-test-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/smC8/angular-test-jx
