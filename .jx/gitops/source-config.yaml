@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: angular-test-jx
     - name: jenkinsx-node
     - name: jx-angular
     - name: jx-go
