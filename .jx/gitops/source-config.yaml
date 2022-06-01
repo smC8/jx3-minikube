@@ -12,6 +12,7 @@ spec:
     - name: jenkinsx-node
     - name: jx-angular
     - name: jx-angular-2
+    - name: jx-angular-3
     - name: jx-go
     - name: jx-go-http
     - name: jx-golang-http
