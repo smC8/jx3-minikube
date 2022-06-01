@@ -11,6 +11,7 @@ spec:
     - name: angular-test-jx
     - name: jenkinsx-node
     - name: jx-angular
+    - name: jx-angular-2
     - name: jx-go
     - name: jx-go-http
     - name: jx-golang-http
